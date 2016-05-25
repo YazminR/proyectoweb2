@@ -1,45 +1,29 @@
-//<script>
- var posicion = 0;
- var imagenes = new Array();
- $(document).ready(function() {
-   //alert(jQuery('.texto').html());
-   var numeroImatges = 6;
-   if(numeroImatges<=3){
-       $('.derecha_flecha').css('display','none');
-    $('.izquierda_flecha').css('display','none');
-   }
+var a = jQuery.noConflict();
 
-     $('.izquierda_flecha').live('click',function(){
-         if(posicion>0){
-            posicion = posicion-1;
-        }else{
-            posicion = numeroImatges-3;
-        }
-        $(".carrusel").animate({"left": -($('#product_'+posicion).position().left)}, 600);
-        return false;
-     });
+        a(document).ready(function() {
 
-     $('.izquierda_flecha').hover(function(){
-         $(this).css('opacity','0.5');
-     },function(){
-         $(this).css('opacity','1');
-     });
+        a('#carousel').infiniteCarousel({
 
-     $('.derecha_flecha').hover(function(){
-         $(this).css('opacity','0.5');
-     },function(){
-         $(this).css('opacity','1');
-     });
+           transitionSpeed:12000,     /*Tiempo de avance de las imagenes*/
 
-     $('.derecha_flecha').live('click',function(){
-        if(numeroImatges>posicion+3){
-            posicion = posicion+1;
-        }else{
-            posicion = 0;
-        }
-        $(".carrusel").animate({"left": -($('#product_'+posicion).position().left)}, 600);
-        return false;
-     });
+           displayTime: 2000,   /* El tiempo en milisegundos para hacer pausa*/
+
+           thumbnailType: 'false',
+
+           customClass: 'myCarousel',
+
+           easeLeft: 'linear',
+
+           easeRight:'linear',
+
+           inView: 1,    /*Imagenes mostradas*/
+
+           advance: true,
+
+           autoPilot: true,
+
+           displayProgressRing: true,    /*muestra grafica del tiempo que pausa la imagen*/
+
+});
 
  });
-//</script>

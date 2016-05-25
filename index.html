@@ -96,7 +96,7 @@ div.ic_myCarousel {
 	
 </head>
 
-<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50" background= "images/slider/slide1.jpg" style="background-repeat: repeat; " bgporperties= "fixed">
 
 
 <!-- Preloader section
@@ -124,10 +124,8 @@ div.ic_myCarousel {
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
             
-				<!-- <li><a href="#home" class="smoothScroll">HOME</a></li> -->
-                
+				               
 				<li><a href="#work" class="smoothScroll">PRINCIPAL</a></li>
-				<!-- <li><a href="#team" class="smoothScroll">INTEGRANTES</a></li> -->
 				<li><a href="#portfolio" class="smoothScroll">GALERIA</a></li>
 				<li><a href="#contact" class="smoothScroll">CONTACTO</a></li>
 			</ul>
@@ -141,9 +139,9 @@ div.ic_myCarousel {
 ================================================== -->
 <div id="home">
 	<div class="site-slider">
-        <ul class="bxslider">
+       <ul class="bxslider">
 			<li>
-                <img src="images/slider/slide1.jpg" alt="slider image 1">
+                <img src="images/slider/slide1.jpg" width="1000" alt="slider image 1">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -166,7 +164,7 @@ div.ic_myCarousel {
                 </div>
             </div>
         </div>
-    </div> <!-- /.site-slider -->
+    </div>  <!-- /.site-slider -->
 </div>
 
 
@@ -411,6 +409,18 @@ div.ic_myCarousel {
  
  <li><img width="1000" height="500" alt="" src="images/portfolio-img7.jpg" /></li>
 
+ <li><img width="1000" height="500" alt="" src="images/portfolio-img8.jpg" /></li>
+
+ <li><img width="1000" height="500" alt="" src="images/portfolio-img9.jpg" /></li>
+
+ <li><img width="1000" height="500" alt="" src="images/portfolio-img10.jpg" /></li>
+
+ <li><img width="1000" height="500" alt="" src="images/portfolio-img11.jpg" /></li>
+
+ <li><img width="1000" height="500" alt="" src="images/portfolio-img12.jpg" /></li>
+
+ <li><img width="1000" height="500" alt="" src="images/portfolio-img13.jpg" /></li>
+
 
 </ul> 
          
@@ -500,43 +510,9 @@ div.ic_myCarousel {
 <script src="js/apigrafico.js"></script>
 
  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+ <script src="http://notoyontoy.site40.net/Js/jquery.infinitecarousel3.min.js"></script>
+ <script type="text/javascript" src="http://notoyontoy.site40.net/Js/easing.js"></script>
+ <script src="js/carrusel.js"> </script >
 
-  <script src="http://notoyontoy.site40.net/Js/jquery.infinitecarousel3.min.js"></script>
-
-  <script type="text/javascript" src="http://notoyontoy.site40.net/Js/easing.js"></script>
-
-  <script>
-
-     var a = jQuery.noConflict();
-
-        a(document).ready(function() {
-
-        a('#carousel').infiniteCarousel({
-
-           transitionSpeed:12000,     /*Tiempo de avance de las imagenes*/
-
-           displayTime: 2000,   /* El tiempo en milisegundos para hacer pausa*/
-
-           thumbnailType: 'false',
-
-           customClass: 'myCarousel',
-
-           easeLeft: 'linear',
-
-           easeRight:'linear',
-
-           inView: 1,    /*Imagenes mostradas*/
-
-           advance: true,
-
-           autoPilot: true,
-
-           displayProgressRing: true,    /*muestra grafica del tiempo que pausa la imagen*/
-
-});
-
- });
-
-</script >
 </body>
 </html>
