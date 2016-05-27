@@ -9,7 +9,8 @@ http://www.tooplate.com/view/2078-adventure
 /* Body 
 ------------------------------------- */
 body {
-    background: #ffffff;
+    background-image: url("../images/slider/slide1.jpg");
+    width: 600%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     position: relative;
@@ -179,10 +180,10 @@ hr {
 }
 
 .custom-navbar .navbar-brand  {
-  border: 4px solid #ffffff;
-  color: #ffffff;
+  border: 4px solid #ff0080;
+  color: #ff0080;
   font-weight: 600;
-  font-size: 24px;
+  font-size:30px;
   padding-top: 11px;
 }
 
@@ -200,7 +201,7 @@ hr {
 .custom-navbar .nav li a {
 	display: block;
 	padding: 15px 20px;
-    color: #ffffff;
+    color: #ff0080;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 2px;
@@ -212,12 +213,12 @@ hr {
 
 .custom-navbar .nav > li > a:focus {
   background-color: transparent;
-  color: #ffffff;
+  color: #800040;
   outline: none;
 }
 
 .custom-navbar .nav li.active > a {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #800040;
 }
 
 .custom-navbar .navbar-toggle {
@@ -263,6 +264,7 @@ hr {
 .site-slider ul li {
   float: left;
   margin: 0;
+  display:none;
 }
 
 .bx-wrapper img {
